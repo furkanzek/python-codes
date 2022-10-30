@@ -5,7 +5,7 @@ people = int(input("How many people to split the bill? :"))
 
 def calculator():
     billWithTip = total * (1 + (tip / 100))
-    forEachPerson = billWithTip / people
+    forEachPerson = round((billWithTip / people), 2)
     print("Each person will pay " + str(forEachPerson) + " dollars.")
     
 calculator()
